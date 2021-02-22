@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горизонтальный список</title>
+    <style>
+        ul.hr {
+            margin: 0;
+            padding: 4px;
+        }
+        ul.hr li {
+            display: inline; /* Отображать как строчный элемент */
+            margin: 0; /* Отступ слева */
+            padding: 0; /* Поля вокруг текста */
+        }
+        ul.hr li:after{
+            content: '|';
+        }
+        ul.hr li:last-child:after
+        {
+            content: '';
+        }
+    </style>
+</head>
+<body>
+
+<h1>Горизонтальное меню</h1>
+<ul class="hr">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Каталог</a></li>
+    <li><a href="#">Акции</a></li>
+    <li><a href="#">О нас</a></li>
+</ul>
+
+<h2>Меню список</h2>
+<ul>
+    <li>Главная</li>
+    <li>Меню</li>
+    <li>Акции</li>
+</ul>
+
+<h3>Меню с вложенным списком</h3>
+
+<ul>
+    <li>Главная
+        <ul>
+            <li>Новости</li>
+        </ul>
+    </li>
+    <li>Каталог
+        <ul>
+            <li>Осень-Зима</li>
+            <li>Весна-Лето</li>
+        </ul>
+    </li>
+    <li>Акции
+        <ul>
+            <li>Актуальные</li>
+            <li>Прошедшие</li>
+        </ul>
+    </li>
+    <li>О нас
+        <ul>
+            <li>Контакты</li>
+            <li>Проезд</li>
+        </ul>
+    </li>
+</ul>
+<h4>Меню таблица с вложенными таблицами</h4>
+</body>
+</html>
