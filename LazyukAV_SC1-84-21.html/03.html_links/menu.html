@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горизонтальный список</title>
+    <style>
+        ul.hr {
+            margin: 0;
+            padding: 4px;
+        }
+        ul.hr li {
+            display: inline; /* Отображать как строчный элемент */
+            margin: 0; /* Отступ слева */
+            padding: 0; /* Поля вокруг текста */
+        }
+        ul.hr li:after{
+            content: '|';
+        }
+        ul.hr li:last-child:after
+        {
+            content: '';
+        }
+    </style>
+</head>
+<body>
+
+<h1>Горизонтальное меню</h1>
+<ul class="hr">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Каталог</a></li>
+    <li><a href="#">Акции</a></li>
+    <li><a href="#">О нас</a></li>
+</ul>
+
+<h2>Меню список</h2>
+<ul>
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Меню</a></li>
+    <li><a href="#">Акции</a></li>
+</ul>
+
+<h3>Меню с вложенным списком</h3>
+
+<ul>
+    <li><a href="#">Главная</a>
+        <ul>
+            <li><a href="#">Новости</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Каталог</a>
+        <ul>
+            <li><a href="#">Осень-Зима</a></li>
+            <li><a href="#">Весна-Лето</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Акции</a>
+        <ul>
+            <li><a href="#">Актуальные</a></li>
+            <li><a href="#">Прошедшие</a></li>
+        </ul>
+    </li>
+    <li><a href="#">О нас</a>
+        <ul>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Проезд</a></li>
+        </ul>
+    </li>
+</ul>
+<h4>Меню таблица с вложенными таблицами</h4>
+<table width="100">
+
+    <tr><td><a href="#">Главная</a></td></tr>
+    <tr><td align="right"><a href="#">Новости</a></td></tr>
+    <tr><td><a href="#">Каталог</a></td></tr>
+    <tr><td align="right"><a href="#">Осень-Зима</a></td></tr>
+    <tr><td align="right"><a href="#">Весна-Лето</a></td></tr>
+    <tr><td><a href="#">Акции</a></td></tr>
+    <tr><td align="right"><a href="#">Актуальные</a></td></tr>
+    <tr><td align="right"><a href="#">Прошедшие</a></td></tr>
+    <tr><td><a href="#">О нас</a></td></tr>
+    <tr><td align="right"><a href="#">Контакты</a></td></tr>
+    <tr><td align="right"><a href="#">Проезд</a></td></tr>
+
+</table>
+</body>
+</html>
