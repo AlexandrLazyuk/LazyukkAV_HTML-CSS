@@ -1,9 +1,13 @@
-table {
+table
+{
     text-align: right;
 }
-h1 {
-    font-family: cursive;
+h1
+{
+    font-family:  cursive;
+ align-content: center;
 }
-.text {
+.text
+{
     font-family: 'Bad Script', cursive; text-indent: 20px;
 }
