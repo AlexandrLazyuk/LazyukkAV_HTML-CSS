@@ -5,7 +5,8 @@ table
 h1
 {
     font-family:  cursive;
- align-content: center;
+    align-content: center;
+    letter-spacing: normal;
 }
 .text
 {
