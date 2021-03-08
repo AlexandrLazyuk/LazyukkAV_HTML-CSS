@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        div{
+            float: left;
+            background: black; /* Цвет фона */
+            padding: 0px; /* Поля вокруг текста */
+            margin-right: 20px; /* Отступ справа */
+            width: 400px; /* Ширина блока */
+        }
+        p{
+            width: 400px;
+            white-space: pre;
+            color: green;
+            margin-left: -10px;
+        }
+    </style>
     <title>Title</title>
 </head>
 <body>
-
+<div>
+    <p>
+         #!/user/bin/ebv Python
+        print 'Hallo. I am a Python program.'
+        name = raw input("What is your name?")
+        print "Hello there, " + name + "!"
+    </p>
+</div>
 </body>
 </html>
