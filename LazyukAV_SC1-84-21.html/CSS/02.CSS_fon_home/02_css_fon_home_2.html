@@ -3,30 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         div{
-            float: left;
+            padding: 20px;
+            width: 350px;
+        }
+
+        div.base{
+            padding: 20px;
+        }
+
+        div.code__wrapper {
             background: black; /* Цвет фона */
-            padding: 0px; /* Поля вокруг текста */
-            margin-right: 20px; /* Отступ справа */
-            width: 400px; /* Ширина блока */
+            width: 400px /* Ширина блока */
+        }
+
+        code {
+            color: green;
+            white-space: pre-line ;
+        }
+
+        div.list{
+            padding: 20px;
+            width: 350px;
         }
         p{
-            width: 400px;
-            white-space: pre;
-            color: green;
-            margin-left: -10px;
+
         }
+
+        ul{
+            list-style-type: lower-roman;
+
+        }
+
     </style>
     <title>Title</title>
 </head>
 <body>
-<div>
-    <p>
-         #!/user/bin/ebv Python
-        print 'Hallo. I am a Python program.'
-        name = raw input("What is your name?")
-        print "Hello there, " + name + "!"
-    </p>
-</div>
+     <div class="base">
+         <div class="code__wrapper">
+             <code>#!/user/bin/ebv Python
+                        print 'Hallo. I am a Python program.'
+                        name = raw input("What is your name?")
+                        print "Hello there, " + name + "!"</code>
+         </div>
+     </div>
+         <p>&#8544;.<strong>Контейнер с кодом</strong></p>
+            <div>
+                <ul>
+                    <li>Цвет фона: черный</li>
+                    <li>Цвет текста: зеленый</li>
+                    <li>Ширина: 400px</li>
+                    <li>Максимальная высота контейнера: 4-е строки</li>
+                    <li>Переполнение: автоматическое</li>
+                </ul>
+            </div>
+     <p>&#8545;.<strong>Список</strong></p>
+       <div class="list">
+         <ul>
+             <li>Ширина: 350px</li>
+             <li>Тип списка: римские цифры</li>
+             <li>Тип вложенного списка: римские нижний регистр</li>
+         </ul>
+       </div>
+
 </body>
 </html>
