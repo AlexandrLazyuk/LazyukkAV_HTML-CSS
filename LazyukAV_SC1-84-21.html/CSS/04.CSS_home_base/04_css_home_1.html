@@ -3,7 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
     <style type="text/css">
+
+        a[href^="https://ru.wikipedia.org/wiki/Doc"] {
+            background: url(extref.png) no-repeat 0 5px;
+            padding-left: 13px
+        }
+        a[href^="https://ru.wikipedia.org/wiki/pdf"] {
+            background: url(extref.png) no-repeat 0 5px;
+            padding-left: 13px
+        }
+        a[href^="https://ru.wikipedia.org/wiki/zip"] {
+            background: url(extref.png) no-repeat 0 5px;
+            padding-left: 13px
+        }
+        a[href^="files/document.doc"]:before {
+            content: '';
+            position: absolute;
+            width: 315px;
+            height: 300px;
+            left: 0;
+            top: 100px;
+            background: url(wpsofficedoc_103611.png) center 0 no-repeat;
+        }
+
+        a[href^="files/document.pdf"]:before {
+            content: '';
+            position: absolute;
+            width: 255px;
+            height: 300px;
+            left: 0;
+            top: 154px;
+            background: url(file_pdf_download_icon-icons.com_68954.png) center 0 no-repeat;
+        }
+
+        a[href^="files/document.zip"]:before {
+            content: '';
+            position: absolute;
+            width: 145px;
+            height: 300px;
+            left: 0;
+            top: 225px;
+            background: url(folder_archive_zip_22613.png) center 0 no-repeat;
+        }
+
+        li{
+            background: url(extref.png) no-repeat 0 5px;
+            padding-left: 13px
+        }
+
 
     </style>
 </head>
